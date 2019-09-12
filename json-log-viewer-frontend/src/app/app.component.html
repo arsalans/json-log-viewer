@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <h3>Mac Key Log Visualizer</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <app-file-loader (jsonResponse)="onJsonResponse($event)"></app-file-loader>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <app-log-visualizer
+        [jsonFile]="parentJsonFile"></app-log-visualizer>
+    </div>
+  </div>
+</div>
+
+
+

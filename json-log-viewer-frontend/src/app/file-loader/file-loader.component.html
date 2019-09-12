@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <input type="file" ng2FileSelect [uploader]="uploader" accept="application/json"/>
+    </div>
+    <div class="col-sm">
+      <button type="button" (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
+        Open
+      </button>
+    </div>
+  </div>
+</div>

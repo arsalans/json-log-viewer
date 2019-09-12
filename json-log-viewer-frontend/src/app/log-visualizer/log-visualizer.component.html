@@ -1,0 +1,18 @@
+<p>log-visualizer works!</p>
+
+
+<!--<pre>-->
+<!--  <code>{{_jsonFile}}></code>-->
+<!--</pre>-->
+<table>
+  <thead>
+  <tr>
+    <th *ngFor="let head of this._jsonFile[0] | keys">{{head}}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of this._jsonFile">
+    <td *ngFor="let list of item | keys">{{item[list]}}</td>
+  </tr>
+  </tbody>
+</table>
